@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Pair Uploader</title>
+</head>
+<body>
+    <form id="uploadForm">
+        <label for="name">Name or Alias:</label>
+        <input type="text" id="name" required>
+        <label for="text">Text:</label>
+        <input type="text" id="text" required>
+        <label for="image1">Image 1:</label>
+        <input type="file" id="image1" accept="image/*" required>
+        <label for="image2">Image 2:</label>
+        <input type="file" id="image2" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    <button onclick="window.open('gallery.html', '_blank')">View Gallery</button>
+    <script src="app.js"></script>
+</body>
+</html>
